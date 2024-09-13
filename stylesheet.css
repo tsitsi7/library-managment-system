@@ -1,0 +1,58 @@
+:root{
+    --main:rgb(100, 60, 141);
+    /*use var(-main)*/
+    --second: rgb(77, 146, 100);
+    /*use var(--second)*/
+}
+body{
+    background-color: var(--main);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.login {
+    width: 400px;
+    padding:40px;
+    display: block;
+    border-radius: 40px;
+    margin-top: 10%;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+.header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.header img{
+    width: 80px;
+    height: 80px;
+}
+.login input{
+    padding:5px;
+    border-radius: 50px;
+    width:100%;
+    margin-bottom: 10px;
+}
+.login h2,h3{
+    text-align: center;
+    color: var(--main);
+}
+.login a{
+    color: var(--main);
+}
+button{
+    background-color:var(--second) ;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    width:100%;
+    margin-bottom: 8px;
+}
+
+button:hover {
+    background-color:rgb(111, 174, 132);
+}

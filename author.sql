@@ -1,0 +1,5 @@
+CREATE TABLE Author (
+    ID INT PRIMARY KEY,
+    Name VARCHAR(255) UNIQUE,
+    Genre VARCHAR(100)
+);
